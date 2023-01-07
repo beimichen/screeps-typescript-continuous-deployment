@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "license": "Unlicense",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx tsc",
+    "coverage": "nyc mocha",
+    "push": "screeps-api upload dist/main.js --server private",
+    "roll": "rollup -c --environment DEST:private",
+    "test-unit": "mocha test/unit/**/*.ts",
+    "test-integration": "echo 'See docs/in-depth/testing.md for instructions on enabling integration tests'",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@screeps/common": "2.12.1",
+    "@types/node": "^13.13.1",
+    "@types/screeps": "^3.2.3",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "@typescript-eslint/typescript-estree": "^4.29.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-screeps": "^2.1.0",
+    "mocha": "^9.2.1",
+    "nyc": "^15.0.1",
+    "prettier": "^2.3.2",
+    "rollup": "^2.7.2",
+    "screeps-api": "^1.16.0",
+    "screepsmod-auth": "^2.7.1",
+    "ts-node": "^10.2.0",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.9.4"
+  }
+}

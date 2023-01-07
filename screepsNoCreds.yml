@@ -1,0 +1,6 @@
+servers:
+  private:
+    host: ${host}
+    port: 21025
+    username: ${username}
+    password: ${password}

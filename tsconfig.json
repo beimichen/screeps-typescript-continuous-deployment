@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"outDir": "./built",
+		"module": "commonjs",
+		"lib": [
+			"es2017"
+		],
+		"target": "es2017",
+		"moduleResolution": "Node",
+		"sourceMap": true,
+		"strict": true,
+		"experimentalDecorators": true,
+		"noImplicitReturns": true,
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"allowUmdGlobalAccess": true
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
